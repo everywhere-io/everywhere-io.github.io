@@ -23,100 +23,106 @@
 </head>
 
 <body>
-<br>
-  <video id="eyevideo" poster="eye-video/eyevideo.jpg" autoplay muted loop >
-  <source src="img/eye-video/everywhere-eye-video.mp4" type="video/mp4">
-  <source src="img/eye-video/everywhere-eye-video.webm" type="video/webm">
+  <br>
+  <video id="eyevideo" poster="eye-video/eyevideo.jpg" autoplay muted loop playsinline>
+    <source src="img/eye-video/everywhere-eye-video.mp4" type="video/mp4">
+    <source src="img/eye-video/everywhere-eye-video.webm" type="video/webm">
   </video>
-  <br>
-  <img id="everywherefont" src="img/everywhere-text-only-black.png"/>
-
-<div id="tm-text">
-  BioBatch&#8482 / BioBlend&#8482 / CirCot&#8482 / Arc&#8482<br>
-</div>
-<div style="text-align:center">
-  <br>
-  <a href="https://www.linkedin.com/jobs/view/3055676070/?capColoOverride=true" class="button">apply for jobs</a>
-</div>
-<br/>
-  <div id="tm-text" style="text-align:justify">
-We creates data-enabled, sustainable materials that are easy to adopt, cost effective, and massively scaleable.
-  </div>
-
-
-<br/>
-<style>
-.container-eye{
-  height:auto;
-  text-align:center;
-padding:0px;margin:0px;
-}
-.spinning-eye-container{
-  position:relative;
-  width:80%;
-  height:0;
-  margin: 0 auto;
-  padding-bottom:80%;
-  max-width:900px;
-}
-.spin-img{
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:100%;
-}
-.inner-spin{
- width:50%;
- margin-left:25%;
- margin-top:25%;
- display:block;
-}
-
-@media only screen and (max-width: 720px) {
-.container-eye{
-width:100%;
-}
-.spinning-eye-container{
- width:90%;
-
-}
-
-}
-
-.spinner{
-  animation: rotation 36s infinite linear;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-</style>
-<div class="container-eye">
-    <div class="spinning-eye-container">
-      <img class="spin-img inner-spin" src="img/qr-recruiting.png">
-      <img class="spin-img spinner" src="https://cdn.shopify.com/s/files/1/0586/2968/5411/files/close-the-loop-text.png?v=1634165314">
-    </div>
-  </div>
-<br/>
-<br/>
-<div id="tm-text">
-	&copy; everywhere apparel inc all rights reserved
-</div>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  var eyeVideo = document.getElementById("eyevideo");
+  eyeVideo.muted = true;
+  eyeVideo.play();
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
 
-</html>
+      <br>
+      <img id="everywherefont" src="img/everywhere-text-only-black.png"/>
+
+      <div id="tm-text">
+        BioBatch&#8482 / BioBlend&#8482 / CirCot&#8482 / Arc&#8482<br>
+      </div>
+      <div style="text-align:center">
+        <br>
+        <a href="https://www.linkedin.com/jobs/view/3055676070/?capColoOverride=true" class="button">apply for jobs</a>
+      </div>
+      <br/>
+      <div id="tm-text" style="text-align:justify">
+        We creates data-enabled, sustainable materials that are easy to adopt, cost effective, and massively scaleable.
+      </div>
+
+
+      <br/>
+      <style>
+        .container-eye{
+          height:auto;
+          text-align:center;
+          padding:0px;margin:0px;
+        }
+        .spinning-eye-container{
+          position:relative;
+          width:80%;
+          height:0;
+          margin: 0 auto;
+          padding-bottom:80%;
+          max-width:900px;
+        }
+        .spin-img{
+          position:absolute;
+          left:0px;
+          top:0px;
+          width:100%;
+        }
+        .inner-spin{
+          width:50%;
+          margin-left:25%;
+          margin-top:25%;
+          display:block;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .container-eye{
+            width:100%;
+          }
+          .spinning-eye-container{
+            width:90%;
+
+          }
+
+        }
+
+        .spinner{
+          animation: rotation 36s infinite linear;
+        }
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }
+
+      </style>
+      <div class="container-eye">
+        <div class="spinning-eye-container">
+          <img class="spin-img inner-spin" src="img/qr-recruiting.png">
+          <img class="spin-img spinner" src="https://cdn.shopify.com/s/files/1/0586/2968/5411/files/close-the-loop-text.png?v=1634165314">
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+      <div  id="tm-text">
+        &copy; everywhere apparel inc all rights reserved
+      </div>
+      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+      <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
+    </html>
